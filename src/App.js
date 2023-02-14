@@ -1,11 +1,10 @@
-import React from 'react';
-import { RouterProvider } from 'react-router';
-import router from './routes';
+import { RouterProvider } from "react-router";
+import router from "./routes";
 
-const App = () => {
+const App = ({cable}) => {
   return (
-    <div className='bg-neutral-900 min-h-screen w-full'>
-      <RouterProvider router={router} />
+    <div className="bg-neutral-900 min-h-screen w-full">
+      <RouterProvider router={router} cable={cable} />
     </div>
   );
 };

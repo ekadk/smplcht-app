@@ -3,6 +3,11 @@ import ChatRoomHeader from "../components/ChatRoomHeader";
 import ChatRoomInfo from "../components/ChatRoomInfo";
 import ChatRoomInput from "../components/ChatRoomInput";
 
+import ActionCable from "actioncable";
+
+const CableApp = {};
+CableApp.cable = ActionCable.createConsumer("ws://localhost:3000/cable");
+
 const HomeView = () => {
   return (
     <div className="h-screen flex justify-center gap-6 p-8">
