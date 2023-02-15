@@ -43,7 +43,6 @@ const GettingStartedView = () => {
           </div>
           <button
             className="btn btn-secondary w-full"
-            onClick={() => setJoinRoom(true)}
           >
             Join Chat Room
           </button>
